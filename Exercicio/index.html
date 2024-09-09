@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sytlesheet" href="styles/styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulário de Cadastro</h1>
+    <fieldset>
+        <legend> Dados Pessoais</legend>
+      <form action="3" method="get">
+      <label name="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required/>
+
+      </br>
+
+
+      <label name="email">Email:</label>
+      <input type="email" name="email" id="email" required/>
+
+      </br>
+
+      <label name="senha">Senha:</label>
+      <input type="password" name="password" id="password" required/>
+
+    </br>
+
+      <label name="phone">Telefone:</label>
+      <input type="tel" name="phone" id="phone" >
+
+      </br>
+
+      <label name="data_nasc">Data de Nascimento:</label>
+      <input type="date" name="data_nasc" id="data_nasc" >
+
+     </br>
+
+      <label name="genero">Sexo:</label>
+      <select name="genero" id="genero">
+        <option value="masculino"> Masculino </option>
+        <option value="feminino"> Feminino </option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Localização</legend>
+
+        <label name="cidade">Cidade:</label>
+
+       </br>
+
+        <input type="radio" name="cidade" id="cidade" >
+        <label name="cidade">Nova Odessa</label>
+
+   
+        <input type="radio" name="cidade" id="cidade" >
+        <label name="cidade">Sumaré</label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Interesses</legend>
+        <label name="interesse">Selecione seus interesses:</label>
+
+        <input type="checkbox" name="tecnologia" id="tecnologia" >
+        <label name="tecnologia">Tecnologia</label>
+
+        <input type="checkbox" name="esporte" id="esporte" >
+        <label name="esporte">Esportes</label>
+
+        <input type="checkbox" name="musica" id="musica" >
+        <label name="musica">Musica</label>
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Mensagem</legend>
+        <label name="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="25" required></textarea>
+    </fieldset>
+      
+    <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
