@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sytlesheet" href="styles/styles.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <!-- GET Vai mandar de forma visível -->
+    <!-- PUT vai mandar de forma escondida -->
+
+    <!-- typeTEXT tag na qual vai se inserir texto -->
+    <!-- REQUIRED tag utilizada na qual o campo é obrigatório de ser preenchido -->
+
+    <form action="#" method="get">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required />
+
+      <br />
+      <br />
+
+      <!-- typeEMAIL tag na qual vai se inserir email, obrigatório ter @ -->
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+
+      <br />
+      <br />
+
+      <!-- typePASSWORD tag na qual vai se inserir senha, apareçe as bolinhas para não deixar a senha visível -->
+
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password" />
+
+      <br />
+      <br />
+
+      <!-- typesNUMBER tag na qual só vai se inserir números -->
+
+      <label for="idade">Idade:</label>
+      <input type="number" name="idade" id="idade" min="1" max="100" />
+
+      <br />
+      <br />
+
+      <!-- FIELDSET ele vai enquadrar os campos dentro dele -->
+      <!-- LEGEND ele vai colocar uma legenda nesse FIELDSET -->
+      <fieldset>
+        <legend>Datas</legend>
+
+        <label for="date">Data de aniversário:</label>
+        <input type="date" name="date" id="date" max="2020-12-31" />
+
+        <br />
+        <br />
+
+        <label for="monthyear">Mês e ano:</label>
+        <input type="month" name="monthyear" id="monthyear" />
+      </fieldset>
+
+      <br />
+      <br />
+
+      <!-- typeFILE é um tag na qual você seleciona arquivos de fotos ou qualquer tipo de arquivo, mas apenas 1 é selecionado -->
+      <!-- MULTIPLE é uma tag na qual escolhemos vários arquivos -->
+      <label for="img_perfil">Imagem perfil:</label>
+      <input type="file" name="img_perfil" id="img_perfil" />
+
+      <br />
+      <br />
+
+      <label for="img_produto">Imagem produto:</label>
+      <input type="file" name="img_produto" id="img_produto" multiple />
+
+      <br />
+      <br />
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" name="telefone" id="telefone" />
+
+      <br />
+      <br />
+
+      <!-- STEP caso eu precise utilizar valor quebrado ela será sua TAG -->
+
+      <label for="valor_produto">Valor:</label>
+      <input
+        type="number"
+        name="valor_produto"
+        id="valor_produto"
+        min="0"
+        step="0.10"
+      />
+
+      <br />
+      <br />
+
+      <!-- typeCOLOR é a tag na qual vai abrir um menu de cores no formulário-->
+
+      <label for="cor_favorita">Cor favorita:</label>
+      <input type="color" name="cor_favorita" id="cor_favorita" />
+
+      <br />
+      <br />
+
+      <!-- typeCHECKBOX é a tag na qual você pode escolher multiplas opções (contanto que não utilize a tag VALUE para restringir uma única opção)  -->
+
+      <input type="checkbox" name="basquete" id="basquete" />
+      <label for="basquete">Basquete:</label>
+
+      <input type="checkbox" name="futebol" id="futebol" />
+      <label for="futebol">Futebol:</label>
+
+      <br />
+      <br />
+
+      <!-- typeRADIO é a tag na qual você só pode escolher uma única opção, para restringir utiliza value com o nome da sua string -->
+
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <label for="feminino">Feminino:</label>
+
+      <input type="radio" name="sexo" id="masculino" value="masculino" />
+      <label for="masculino">Masculino:</label>
+
+      <br />
+      <br />
+
+      <!-- typeTEL é a tag na qual você pode colocar número de celular ou telefone -->
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" name="telefone" id="telefone" />
+
+      <br />
+      <br />
+
+      <!-- SELECT vai utilizar um campo de abrir e fechar na qual a pessoa vai escolher apenas um daqueles dados -->
+
+      <label for="country">País:</label>
+      <select name="country" id="country">
+        <option value="brasil">Brasil</option>
+        <option value="argentina">Argentina</option>
+        <option value="paraguai">Paraguai</option>
+        <option value="uruguai">Uruguai</option>
+        <option value="chile">Chile</option>
+      </select>
+
+      <br />
+      <br />
+
+      <!-- PLACEHOLDER tag na qual vai informar o que deve ser preenchido no campo -->
+      <!-- TEXTAREA utilizada para criar um campo de descrição -->
+
+      <label for="descricao">Descrição:</label>
+      <textarea
+        id="descricao"
+        name="descricao"
+        placeholder="Digite uma breve descrição sobre você!"
+        required
+      ></textarea>
+
+      <br />
+      <br />
+
+      <!-- typeSUBMIT botão de enviar seu formulário -->
+
+      <input type="submit" value="Enviar Formulario" />
+      <button type="submit">Enviar?</button>
+
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
