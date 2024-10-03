@@ -9,3 +9,30 @@ a {
 .tamanho {
   font-size: 18px;
 }
+
+#rodape {
+  background-color: rgb(57, 57, 57);
+}
+
+.rodape {
+  height: 200px;
+}
+
+.rodape p {
+  color: #87b8e8;
+}
+
+#container {
+  height: 500px;
+  width: 100%;
+  background-color: purple;
+}
+
+#container p {
+  font-size: 20px;
+}
+
+.imagem {
+  height: 50%;
+  width: 100%;
+}
