@@ -7,28 +7,60 @@
 body {
   background-color: white;
   height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media only screen and (min-width: 251px) and (max-width: 1000px) {
+.card {
+  background-color: black;
+  height: 300px;
+  width: 250px;
+
+  position: static;
+
+  border-radius: 20px;
+}
+
+/* .cards {
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+
+  /* overflow: hidden;
+  background-position: 50px; 
+} */
+
+@media (max-width: 1300px) {
   body {
-    position: static;
+    background-color: red;
   }
-}
-
-@media (min-width: 200px) and (max-width: 250px) {
-  body {
+  .card {
     position: relative;
+    top: 250px;
+    right: 400px;
   }
 }
 
-@media (min-width: 150px) and (max-width: 199px) {
+@media (max-width: 900px) {
   body {
+    background-color: yellow;
+  }
+  .card {
     position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 
-@media (min-width: 100px) and (max-width: 149px) {
+@media (max-width: 500px) {
   body {
-    position: sticky;
+    background-color: green;
+  }
+  .card {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
