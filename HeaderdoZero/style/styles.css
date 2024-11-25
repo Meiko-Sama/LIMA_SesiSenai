@@ -9,27 +9,26 @@
   padding: 10px 50px;
 
   background-color: rgba(0, 0, 0, 0.6);
-
   position: relative;
 
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-
 .menu img {
-  height: 46px;
   width: 180px;
+  height: 46px;
 }
 
 .menu nav a {
   margin-left: 20px;
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
 .menu label i {
-  font-size: 30px;
   color: white;
+  font-size: 30px;
   display: none;
 }
 
@@ -48,15 +47,16 @@
     top: 100%;
     left: 0;
 
-    transition: 0.7s ease;
-
     display: none;
+    visibility: hidden;
   }
 
-  .lista a {
+  .listas a {
     display: block;
     text-align: center;
     margin-top: 15px;
+    opacity: 0;
+    transition: 0.7s ease;
     transform: translateY(-50px);
   }
 
@@ -76,15 +76,15 @@
     display: block;
   }
 
-  .menu inpunt:checked ~ .listas {
-    transition: 0.7s ease;
+  .menu input:checked ~ .listas {
     height: auto;
     padding: 10px 20px 40px 20px;
     display: block;
+    visibility: visible;
   }
 
-  .menu inpunt:checked ~ .listas a {
+  .menu #check:checked ~ .listas a {
     transform: translateY(0px);
-    color: red;
+    opacity: 1;
   }
 }
