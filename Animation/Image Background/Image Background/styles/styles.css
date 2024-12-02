@@ -47,7 +47,7 @@
 
 /*  ------BORDER RGB------ */
 
-/* * {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -119,7 +119,7 @@
 
 .card:hover::after {
   filter: blur(30px);
-} */
+}
 
 /* ------ Icones ------ */
 
@@ -200,7 +200,7 @@
   }
 } */
 
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -269,4 +269,4 @@ body {
   to {
     left: 0;
   }
-}
+} */
