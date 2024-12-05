@@ -131,7 +131,7 @@ button {
 .teste h2 {
   color: rgba(255, 255, 255);
   font-size: 35px;
-  padding-top: 10px;
+  padding-top: 80px;
   margin: 20px;
   text-align: center;
 }
@@ -154,9 +154,6 @@ button {
   font-size: 40px;
 
   text-align: center;
-
-  padding-left: 180px;
-  padding-top: 30px;
 }
 
 .bxs-coffee {
@@ -164,9 +161,6 @@ button {
   font-size: 40px;
 
   text-align: center;
-
-  padding-left: 180px;
-  padding-top: 30px;
 }
 
 .bxs-happy-beaming {
@@ -174,9 +168,6 @@ button {
   font-size: 40px;
 
   text-align: center;
-
-  padding-left: 180px;
-  padding-top: 30px;
 }
 
 .sobre {
@@ -186,9 +177,11 @@ button {
   height: 100vh;
 
   position: relative;
+
+  display: flex;
 }
 
-.sobre .divsobre h1 {
+.sobre .divsobre h2 {
   color: white;
   font-size: 70px;
   font-weight: lighter;
@@ -201,10 +194,27 @@ button {
 .sobre .divsobre div p {
   color: white;
   font-size: 20px;
-  margin: 150px;
+  margin: 80px;
   padding-right: 100px;
 
   text-align: justify;
+}
+
+.divsobre {
+  width: 50%;
+  height: 100%;
+}
+
+.divsobre .imgsobre {
+  width: 50%;
+  height: 100%;
+}
+
+.divsobre .imgsobre img {
+  width: 800px;
+  height: 800px;
+
+  padding-top: 100px;
 }
 
 .bxs-heart {
