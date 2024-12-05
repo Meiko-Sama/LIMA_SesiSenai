@@ -1,6 +1,9 @@
 @font-face {
   font-family: halloween;
   src: url("../fonts/RubikWetPaint-Regular.ttf");
+
+  font-family: fancy;
+  src: url("../fonts/Bahiana-Regular.ttf");
 }
 
 * {
@@ -17,7 +20,7 @@
   position: relative;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -222,6 +225,57 @@ button {
   font-size: 40px;
 
   text-align: center;
+}
+
+.market {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.market .marketplace h2 {
+  color: white;
+
+  font-weight: bold;
+  font-family: fancy;
+  font-size: 30px;
+}
+
+.bxs-cart {
+  color: #fff;
+  font-size: 40px;
+}
+
+.market .marketplace {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.market .marketplace a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 160px;
+}
+
+.cards div {
+  background-color: #3f2910;
+  height: 400px;
+  width: 350px;
+
+  border-radius: 20px;
+}
+
+.cards div img {
+  height: 200px;
+  width: 200px;
 }
 
 @media (max-width: 800px) {
