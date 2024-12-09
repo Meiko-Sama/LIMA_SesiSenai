@@ -1,11 +1,11 @@
 @font-face {
-  font-family: halloween;
-  src: url("../fonts/RubikWetPaint-Regular.ttf");
+  font-family: fancy;
+  src: url("../fonts/Bahiana-Regular.ttf");
 }
 
 @font-face {
-  font-family: fancy;
-  src: url("../fonts/Bahiana-Regular.ttf");
+  font-family: sangue;
+  src: url("../fonts/Nosifer-Regular.ttf");
 }
 
 * {
@@ -123,7 +123,7 @@ button {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 100px;
-  font-family: halloween;
+  font-family: sangue;
 }
 
 .teste .div {
@@ -193,7 +193,7 @@ button {
   padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 70px;
-  font-family: halloween;
+  font-family: sangue;
 }
 
 .sobre .divsobre div p {
@@ -208,16 +208,6 @@ button {
 .sobre .divsobre {
   width: 50%;
   height: 100%;
-}
-
-.bxs-heart {
-  color: #fff;
-  font-size: 40px;
-
-  position: absolute;
-
-  left: 700px;
-  top: 150px;
 }
 
 .market {
@@ -293,18 +283,101 @@ button {
   height: 100vh;
   width: 100%;
 
-  background-color: #fff;
+  background: linear-gradient(
+    #1f1717,
+    rgb(35, 20, 19),
+    #2c1f11,
+    #3f2910,
+    #62421d
+  );
 }
 
-.agendar div {
-  background-color: #1f1717;
-  width: 200px;
-  height: 300px;
+.agendar h1 {
+  font-size: 50px;
+  font-family: sangue;
+  font-weight: lighter;
 
+  color: #fff;
+  text-align: center;
+
+  padding-top: 30px;
+}
+
+.agendar h2 {
+  font-weight: lighter;
+
+  color: #fff;
+  text-align: justify;
+
+  padding-top: 30px;
+  margin: 20px;
+
+  font-size: 20px;
+}
+
+.agendar .info {
   display: flex;
   justify-content: space-around;
 
   padding-top: 160px;
+}
+
+.agendar .info div {
+  background-color: #1f1717;
+  width: 300px;
+  height: 350px;
+
+  border-radius: 20px;
+}
+
+.agendar .info h2 {
+  color: #fff;
+  text-align: center;
+
+  padding-top: 15px;
+}
+
+.agendar .info p {
+  color: #fff;
+  text-align: justify;
+  margin: 15px;
+}
+
+.bx-male-female {
+  font-size: 40px;
+}
+
+.bxs-calendar {
+  font-size: 40px;
+}
+
+.bx-question-mark {
+  font-size: 40px;
+}
+
+.cadastro {
+  height: 100vh;
+  background-color: #62421d;
+}
+
+form {
+  text-decoration: none;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  background-color: transparent;
+}
+
+.cadastro form input {
+  border: none;
+  border-bottom: 1px solid white;
+
+  outline: 0;
 }
 
 @media (max-width: 800px) {
