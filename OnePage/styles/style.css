@@ -697,10 +697,8 @@ button {
 
   .teste .div {
     padding-top: 0;
-
-    margin: 5px;
-
-    gap: 5px;
+    margin: 0;
+    gap: 3px;
   }
 
   .teste .div div {
@@ -764,5 +762,42 @@ button {
     width: 260px;
     right: 50px;
     bottom: 0;
+  }
+
+  .teste h1 {
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+
+  .teste .div {
+    padding-top: 0;
+    margin: 0;
+    gap: 5px;
+  }
+
+  .teste .div div {
+    width: 150px;
+    height: 200px;
+  }
+
+  .teste .div h2 {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  .teste .div div p {
+    font-size: 7px;
+  }
+
+  .bxs-coffee-bean {
+    font-size: 10px;
+  }
+
+  .bxs-coffee {
+    font-size: 10px;
+  }
+
+  .bxs-happy-beaming {
+    font-size: 10px;
   }
 }
